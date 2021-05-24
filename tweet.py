@@ -1,5 +1,4 @@
 from twython import Twython
-from config import api_key, secret_key, access_token, access_secret
 
 
 class Tweet:
@@ -20,8 +19,3 @@ class Tweet:
 
         self.authenticate().update_status(status=message, media_ids=media_id)
         print(f"Tweeted: {message}")
-
-
-if __name__ == "__main__":
-    tweet = Tweet(api_key, secret_key, access_token, access_secret)
-    tweet.post('test.jpg', "Hello World! Testing! abcdefg")
