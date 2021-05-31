@@ -12,9 +12,9 @@ class Tweet:
         twitter = Twython(self.api_key, self.secret_key, self.access_token, self.access_secret)
         return twitter
 
-    def post(self, image, message):
-        with open(image, 'rb') as img:
-            response = self.authenticate().upload_media(media=img)
+    def post(self, video, message):
+        with open(video, 'rb') as vid:
+            response = self.authenticate().upload_media(media=vid)
             media_id = [response['media_id']]
 
         self.authenticate().update_status(status=message, media_ids=media_id)
