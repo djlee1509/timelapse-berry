@@ -14,8 +14,7 @@ class Message:
 
   def random_math_quote(self):
     """Returns the random maths quote."""
-    response = requests.get(f"http://numbersapi.com/random/math")
-    math_quote = response.text
+    math_quote = requests.get(f"http://numbersapi.com/random/math").text
     return math_quote
 
 
