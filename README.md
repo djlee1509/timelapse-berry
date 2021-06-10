@@ -7,7 +7,7 @@ Problems:-
 - Raspberry Pi Zero W doesn't have enough memory to process images and convert to video/ gif.
 
 Next Step:-
-- Planning to take photos and upload to Google Cloud Storage.
+- [v] Planning to take photos and upload to Google Cloud Storage.
 - Once files uploaded, Google cloud function will be triggered to convert images to video/ gif then, uploaded to twitter.
 
 Created using:-
